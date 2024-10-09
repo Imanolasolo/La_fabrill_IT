@@ -124,7 +124,7 @@ def main():
     st.write("### Solicita información sobre nuestros servicios, consultas de tecnología, asesoría y más..")
 
     # Process the PDF file to be used as context for the chatbot
-    pdf_path = os.path.join(os.getcwd(), "Base_conocimiento_IT_La_Fabril.pdf")
+    pdf_path = os.path.join(os.getcwd(), "Base_Conocimiento_IT_La_Fabril.pdf")
     pdf_text = get_pdf_text(pdf_path)
     text_chunks = get_text_chunks(pdf_text)
     vector_store = get_vector_store(text_chunks)
